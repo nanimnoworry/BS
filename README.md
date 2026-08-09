@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧬 BS — Fertility PSP Research Workspace
+# BS — Fertility PSP Research Workspace
 
 ### 난임 환자 대상 임신 성공 여부 예측 · 3안 관련 모델링 연구
 
@@ -8,45 +8,31 @@
   <img src="https://img.shields.io/badge/Task-Binary%20Classification-2563EB?style=flat-square" alt="Binary Classification" />
   <img src="https://img.shields.io/badge/Metric-ROC--AUC-7C3AED?style=flat-square" alt="ROC-AUC" />
   <img src="https://img.shields.io/badge/Validation-5--Fold%20OOF-0891B2?style=flat-square" alt="5-Fold OOF" />
-  <img src="https://img.shields.io/badge/Models-CatBoost%20%7C%20LightGBM%20%7C%20XGBoost-059669?style=flat-square" alt="Models" />
 </p>
 
 </div>
 
-`BS` 리포는 난임 예측 프로젝트의 **모델 비교 · OOF 검증 · 앙상블 연구 기록**을 보존합니다. 공식 최종 제출·발표 계보의 기준은 [`nanimnoworry/PSP`](https://github.com/nanimnoworry/PSP)입니다.
+`BS` 리포는 3안과 연결된 모델 비교, OOF 검증, 앙상블 실험을 담고 있습니다. 프로젝트의 공식 최종 결과와 제출 계보는 [`PSP`](https://github.com/nanimnoworry/PSP)를 기준으로 합니다.
 
----
-
-## 🎯 Research Scope
-
-현재 핵심 Notebook:
+## Notebook
 
 ```text
 3안 모델.ipynb의 사본
 ```
 
-주요 연구 범위:
+Notebook에서 다룬 내용은 다음과 같습니다.
 
-- 데이터 구조 및 결측 패턴 확인
-- 시술 맥락 기반 조합·비율 Feature Engineering
-- Logistic Regression / Decision Tree / Random Forest 비교
-- CatBoost / LightGBM / XGBoost 5-Fold OOF 검증
-- Weighted / Rank Ensemble 탐색
+- 데이터 구조와 결측 패턴 확인
+- 시술 맥락을 반영한 조합·비율 변수 생성
+- Logistic Regression, Decision Tree, Random Forest 비교
+- CatBoost, LightGBM, XGBoost 5-Fold OOF 검증
+- Weighted / Rank Ensemble 비교
 
----
+## 데이터와 파생 변수
 
-## 🧪 Data & Modeling
+Notebook 기록 기준 데이터 크기는 Train `256,351 × 69`, Test `90,067 × 68`이며 평가지표는 ROC-AUC입니다.
 
-Notebook 기록 기준:
-
-```text
-Train : 256,351 rows × 69 columns
-Test  :  90,067 rows × 68 columns
-Target: 임신 성공 여부
-Metric: ROC-AUC
-```
-
-대표 파생 변수:
+대표적으로 다음 변수를 추가해 시술 과정의 조합과 비율을 표현했습니다.
 
 ```text
 treatment_x_specific_proc
@@ -57,11 +43,7 @@ mixed_per_fresh_oocyte
 icsi_oocyte_rate
 ```
 
-배아 생성·이식·저장, 난자 혼합·미세주입 등 시술 과정의 상대적 효율과 맥락을 표현하는 변수를 실험했습니다.
-
----
-
-## 📊 OOF Results
+## OOF 결과
 
 | Model | OOF ROC-AUC | LogLoss |
 |---|---:|---:|
@@ -69,65 +51,29 @@ icsi_oocyte_rate
 | LightGBM | `0.739635` | `0.586282` |
 | XGBoost | `0.740039` | `0.586374` |
 
-위 값은 **BS Notebook 내부 실험 계약의 결과**이며, 공식 제출 AUC 또는 다른 Notebook의 OOF와 직접 동일 조건으로 비교하지 않습니다.
-
-### Ensemble
+세 모델의 OOF prediction을 이용한 앙상블 결과는 다음과 같습니다.
 
 | Strategy | Weight | OOF ROC-AUC |
 |---|---|---:|
 | 3-model weighted | Cat `0.45` · LGB `0.20` · XGB `0.35` | `0.740377` |
 | 3-model rank | Cat `0.45` · LGB `0.20` · XGB `0.35` | `0.740384` |
 
-Rank Average와 raw probability ensemble을 혼합하는 hybrid 실험도 포함합니다.
+이 점수들은 이 Notebook의 실험 조건에서 계산한 값입니다. 다른 Notebook의 OOF나 제출 점수와 동일 조건이라고 가정하지 않습니다.
 
----
+## 공식 3안과의 관계
 
-## 🧭 Official Model Relationship
+최종 발표 기준 최고 제출 점수는 2안 `0.74232`, 최종 채택 모델은 3안 `0.74231`입니다.
 
-공식 발표 결과:
+BS Notebook은 CatBoost·LightGBM·XGBoost의 OOF 비교와 Weighted / Rank Ensemble 과정을 담고 있어 3안의 연구 흐름을 이해하는 데 도움이 됩니다. 다만 이 Notebook 자체를 공식 최종 3안 artifact와 동일한 파일로 보지는 않습니다.
 
-```text
-Highest submitted AUC : Plan 2 — 0.74232
-Final adopted model   : Plan 3 — 0.74231
-```
+발표자료상 contributor별 작업 공간 중 하나였으며, 모델링과 검증은 팀 협업으로 진행했습니다.
 
-BS 리포는 **OOF 기반 CatBoost / LightGBM / XGBoost 비교와 Weighted / Rank Ensemble 연구**를 통해 3안 계보를 이해하는 자료입니다.
+## Related Repositories
 
-```text
-BS 3안 관련 연구 기록
-≠
-공식 Final Plan 3 canonical artifact
-```
-
-공식 artifact identity와 최종 계보는 [`PSP`](https://github.com/nanimnoworry/PSP)를 기준으로 확인합니다.
-
----
-
-## 🤝 Research Credit
-
-- **Workspace association:** 박빛샘 연구원
-- **Research context:** 난임걱정마삼조 팀 프로젝트
-- **Modeling / validation / interpretation:** 팀 협업
-- **Official final SSOT:** `nanimnoworry/PSP`
-
----
-
-## 🗂️ Related Repositories
-
-| Repository | 역할 |
+| Repository | 내용 |
 |---|---|
-| **[`PSP`](https://github.com/nanimnoworry/PSP)** | **공식 프로젝트 허브 · 최종 제출/발표 SSOT** |
-| **`BS`** | 모델링 contributor workspace · 3안 관련 연구 기록 |
-| [`planB`](https://github.com/nanimnoworry/planB) | 공식 제출 이후의 추가 모델 연구 · robustness / falsification |
-| [`Research-Papers`](https://github.com/nanimnoworry/Research-Papers) | 임상·문헌 근거 · reference · 발표자료 archive |
+| [`PSP`](https://github.com/nanimnoworry/PSP) | 공식 프로젝트, 최종 제출·발표, 모델 계보 |
+| `planB` | 공식 발표 이후의 추가 모델 연구 |
+| `Research-Papers` | 임상·문헌 근거와 발표자료 아카이브 |
 
----
-
-## 📐 Record Policy
-
-- 파일명보다 **artifact identity와 실행 계보**를 우선합니다.
-- hold-out, OOF, Public 제출 AUC를 구분합니다.
-- 서로 다른 split·seed·feature contract의 작은 점수 차이를 직접 순위로 해석하지 않습니다.
-- 개인 workspace와 팀 전체 연구 contribution을 구분합니다.
-- feature importance나 예측 결과를 임상적 인과관계로 과도하게 해석하지 않습니다.
-- 연구 결과는 실제 의료 판단이나 임상 의사결정을 대체하지 않습니다.
+연구 결과는 실제 의료 판단이나 임상 의사결정을 위한 모델이 아닙니다.
