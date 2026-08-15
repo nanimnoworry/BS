@@ -77,3 +77,11 @@ BS Notebook은 CatBoost·LightGBM·XGBoost의 OOF 비교와 Weighted / Rank Ense
 | `Research-Papers` | 임상·문헌 근거와 발표자료 아카이브 |
 
 연구 결과는 실제 의료 판단이나 임상 의사결정을 위한 모델이 아닙니다.
+
+---
+
+## License and Rights
+
+이 공개 저장소는 포트폴리오·연구 검토를 위해 열람할 수 있지만 오픈소스로 배포하지 않습니다. Notebook의 원천 데이터·내장 출력, 의존 라이브러리와 제3자 자료는 이 저장소가 재라이선스하지 않습니다.
+
+자세한 내용은 [LICENSE](LICENSE), [RIGHTS.md](RIGHTS.md), [CONTRIBUTORS.md](CONTRIBUTORS.md)를 확인하세요.
