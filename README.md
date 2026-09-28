@@ -63,6 +63,7 @@ icsi_oocyte_rate
 - BS Notebook: CatBoost · LightGBM · XGBoost OOF 및 Weighted/Rank Ensemble 연구 기록
 - BS Notebook ≠ 공식 최종 3안 artifact
 - contributor 작업 공간 기반 팀 협업 기록
+- 공개 Notebook 실행 output은 제거했으며, sanitation provenance는 [PSP public sanitation record](https://github.com/nanimnoworry/PSP/blob/main/docs/PUBLIC_NOTEBOOK_SANITIZATION.md)에 기록
 
 ## Related Repositories
 
