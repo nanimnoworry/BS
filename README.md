@@ -17,9 +17,10 @@
 
 ## Notebook
 
-```text
-3안 모델.ipynb의 사본
-```
+[`plan3_model_research.ipynb`](plan3_model_research.ipynb) — sanitized public research notebook
+
+**Historical filename:** `3안 모델.ipynb의 사본`  
+파일명만 정리했으며 sanitized notebook blob identity는 그대로 유지했습니다.
 
 **범위**
 - 데이터 구조 · 결측 패턴
