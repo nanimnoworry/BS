@@ -70,8 +70,8 @@ icsi_oocyte_rate
 | Repository | 범위 |
 |---|---|
 | [`PSP`](https://github.com/nanimnoworry/PSP) | 공식 프로젝트 · 최종 제출/발표 · 모델 계보 |
-| `planB` | 공식 발표 이후 후속 모델 연구 |
-| `Research-Papers` | 임상·문헌 근거 · 발표자료 아카이브 |
+| `planB` *(private)* | 공식 발표 이후 후속 모델 연구 |
+| `Research-Papers` *(private)* | 임상·문헌 근거 · 발표자료 아카이브 |
 
 **Scope boundary:** 해커톤/연구 결과이며 실제 의료 환경의 임상 검증·진단·의사결정 성능을 주장하지 않음.
 
