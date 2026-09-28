@@ -2,7 +2,7 @@
 
 # BS — Fertility PSP Research Workspace
 
-### 난임 환자 대상 임신 성공 여부 예측 · 3안 관련 모델링 연구
+### 대회 제공 난임 시술 데이터 기반 임신 성공 여부 예측 · 3안 관련 모델링 연구
 
 <p>
   <img src="https://img.shields.io/badge/Task-Binary%20Classification-2563EB?style=flat-square" alt="Binary Classification" />
@@ -72,7 +72,7 @@ icsi_oocyte_rate
 | `planB` | 공식 발표 이후 후속 모델 연구 |
 | `Research-Papers` | 임상·문헌 근거 · 발표자료 아카이브 |
 
-**용도 제한:** 임상 의사결정용 모델 아님.
+**Scope boundary:** 해커톤/연구 결과이며 실제 의료 환경의 임상 검증·진단·의사결정 성능을 주장하지 않음.
 
 ---
 
