@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="976" viewBox="0 0 800 976" role="img" aria-labelledby="title desc">
+<title id="title">BS mobile OOF model bench</title><desc id="desc">Mobile research workspace visual with large model cards and OOF scores.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08111F"/><stop offset="1" stop-color="#17142A"/></linearGradient></defs>
+<rect width="800" height="976" rx="32" fill="url(#bg)"/>
+<g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <g data-title="true"><text x="64" y="88" fill="#A78BFA" font-size="26" font-weight="820" letter-spacing="2"><tspan>PLAN 3 RESEARCH · MODEL BENCH</tspan></text></g>
+  <text x="64" y="174" fill="#F8FAFC" font-size="66" font-weight="850"><tspan>BS</tspan></text>
+  <text x="158" y="174" fill="#F8FAFC" font-size="36" font-weight="800"><tspan>Research Workspace</tspan></text>
+  <text x="64" y="230" fill="#CBD5E1" font-size="28" font-weight="700"><tspan>5-Fold OOF · Weighted / Rank</tspan></text>
+  <text x="64" y="276" fill="#94A3B8" font-size="24"><tspan>Official final result lives in PSP</tspan></text>
+  <g data-grid="16">
+    <rect x="64" y="336" width="672" height="160" rx="24" fill="#0F2236" stroke="#38BDF8"/>
+    <rect x="64" y="512" width="672" height="160" rx="24" fill="#17142A" stroke="#A78BFA"/>
+    <rect x="64" y="688" width="672" height="160" rx="24" fill="#101A2B" stroke="#64748B"/>
+  </g>
+  <text x="96" y="388" fill="#38BDF8" font-size="24" font-weight="820"><tspan>CATBOOST</tspan></text><text x="96" y="454" fill="#F8FAFC" font-size="44" font-weight="850"><tspan>OOF 0.740085</tspan></text>
+  <text x="96" y="564" fill="#A78BFA" font-size="24" font-weight="820"><tspan>LIGHTGBM</tspan></text><text x="96" y="630" fill="#F8FAFC" font-size="44" font-weight="850"><tspan>OOF 0.739635</tspan></text>
+  <text x="96" y="740" fill="#94A3B8" font-size="24" font-weight="820"><tspan>XGBOOST</tspan></text><text x="96" y="806" fill="#F8FAFC" font-size="44" font-weight="850"><tspan>OOF 0.740039</tspan></text>
+  <text x="64" y="908" fill="#94A3B8" font-size="24"><tspan>Notebook-specific comparison · not official final artifact</tspan></text>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1136" viewBox="0 0 800 1136" role="img" aria-labelledby="title desc">
+<title id="title">OOF model bench mobile</title><desc id="desc">Stacked mobile model cards for CatBoost LightGBM and XGBoost.</desc>
+<rect width="800" height="1136" rx="32" fill="#F8FAFC"/>
+<g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <g data-title="true"><text x="64" y="80" fill="#0B1220" font-size="38" font-weight="830"><tspan>OOF MODEL BENCH</tspan></text></g>
+  <text x="64" y="126" fill="#64748B" font-size="24"><tspan>Same notebook comparison context</tspan></text>
+  <g data-grid="16">
+    <rect x="64" y="176" width="672" height="272" rx="24" fill="#F0F9FF" stroke="#7DD3FC"/>
+    <rect x="64" y="464" width="672" height="272" rx="24" fill="#F5F3FF" stroke="#C4B5FD"/>
+    <rect x="64" y="752" width="672" height="272" rx="24" fill="#FFFFFF" stroke="#CBD5E1"/>
+  </g>
+  <text x="96" y="226" fill="#0284C7" font-size="24" font-weight="820"><tspan>CATBOOST</tspan></text><text x="96" y="302" fill="#0B1220" font-size="52" font-weight="850"><tspan>0.740085</tspan></text><text x="96" y="350" fill="#64748B" font-size="26"><tspan>OOF ROC-AUC</tspan></text><text x="96" y="398" fill="#475569" font-size="26"><tspan>LogLoss 0.586472</tspan></text>
+  <text x="96" y="514" fill="#7C5FD1" font-size="24" font-weight="820"><tspan>LIGHTGBM</tspan></text><text x="96" y="590" fill="#0B1220" font-size="52" font-weight="850"><tspan>0.739635</tspan></text><text x="96" y="638" fill="#64748B" font-size="26"><tspan>OOF ROC-AUC</tspan></text><text x="96" y="686" fill="#475569" font-size="26"><tspan>LogLoss 0.586282</tspan></text>
+  <text x="96" y="802" fill="#64748B" font-size="24" font-weight="820"><tspan>XGBOOST</tspan></text><text x="96" y="878" fill="#0B1220" font-size="52" font-weight="850"><tspan>0.740039</tspan></text><text x="96" y="926" fill="#64748B" font-size="26"><tspan>OOF ROC-AUC</tspan></text><text x="96" y="974" fill="#475569" font-size="26"><tspan>LogLoss 0.586374</tspan></text>
+</g>
+</svg>

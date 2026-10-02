@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="896" viewBox="0 0 800 896" role="img" aria-labelledby="title desc">
+<title id="title">Ensemble evidence mobile</title><desc id="desc">Stacked weighted and rank ensemble OOF results with shared model weights.</desc>
+<rect width="800" height="896" rx="32" fill="#0B1220"/>
+<g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <g data-title="true"><text x="64" y="80" fill="#F8FAFC" font-size="38" font-weight="830"><tspan>ENSEMBLE EVIDENCE</tspan></text></g>
+  <text x="64" y="126" fill="#94A3B8" font-size="24"><tspan>Cat 0.45 · LGB 0.20 · XGB 0.35</tspan></text>
+  <g data-grid="16">
+    <rect x="64" y="176" width="672" height="272" rx="24" fill="#0F2236" stroke="#38BDF8"/>
+    <rect x="64" y="464" width="672" height="304" rx="24" fill="#17142A" stroke="#A78BFA"/>
+  </g>
+  <text x="96" y="226" fill="#38BDF8" font-size="24" font-weight="820"><tspan>3-MODEL WEIGHTED</tspan></text><text x="96" y="316" fill="#F8FAFC" font-size="58" font-weight="850"><tspan>0.740377</tspan></text><text x="96" y="370" fill="#CBD5E1" font-size="26"><tspan>OOF ROC-AUC</tspan></text>
+  <text x="96" y="514" fill="#A78BFA" font-size="24" font-weight="820"><tspan>3-MODEL RANK</tspan></text><text x="96" y="604" fill="#F8FAFC" font-size="58" font-weight="850"><tspan>0.740384</tspan></text><text x="96" y="658" fill="#CBD5E1" font-size="26"><tspan>OOF ROC-AUC</tspan></text><text x="96" y="710" fill="#94A3B8" font-size="24"><tspan>Rank performance ≠ calibration quality</tspan></text>
+  <text x="64" y="832" fill="#64748B" font-size="24"><tspan>Official final result and artifact identity live in PSP.</tspan></text>
+</g>
+</svg>
