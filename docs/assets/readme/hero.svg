@@ -6,20 +6,21 @@
   <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 </defs>
 <rect width="1600" height="560" rx="32" fill="url(#bg)"/>
+<rect x="80" y="64" width="720" height="432" fill="none" opacity="0" id="text-safe-zone"/>
 <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-  <g data-title="true"><text x="96" y="116" fill="#A78BFA" font-size="20" font-weight="820" letter-spacing="4"><tspan>PLAN 3 RESEARCH · OOF MODEL BENCH</tspan></text></g>
-  <text x="96" y="206" fill="#F8FAFC" font-size="70" font-weight="850"><tspan>BS</tspan></text>
-  <text x="186" y="206" fill="#F8FAFC" font-size="44" font-weight="800"><tspan>Fertility PSP Research Workspace</tspan></text>
-  <text x="96" y="270" fill="#CBD5E1" font-size="28" font-weight="700"><tspan>5-Fold OOF · weighted ensemble · rank ensemble</tspan></text>
-  <text x="96" y="324" fill="#94A3B8" font-size="20"><tspan>Public modeling workspace · official final result lives in PSP</tspan></text>
+  <g data-title="true"><text x="96" y="112" fill="#A78BFA" font-size="20" font-weight="820" letter-spacing="4"><tspan>PLAN 3 RESEARCH · OOF MODEL BENCH</tspan></text></g>
+  <text x="96" y="198" fill="#F8FAFC" font-size="68" font-weight="850"><tspan>BS</tspan></text>
+  <text x="96" y="252" fill="#F8FAFC" font-size="34" font-weight="800"><tspan>Fertility PSP Research Workspace</tspan></text>
+  <text x="96" y="310" fill="#CBD5E1" font-size="26" font-weight="700"><tspan>5-Fold OOF · weighted ensemble · rank ensemble</tspan></text>
+  <text x="96" y="354" fill="#94A3B8" font-size="18"><tspan>Public modeling workspace · official final result lives in PSP</tspan></text>
   <g data-grid="16">
-    <rect x="96" y="384" width="192" height="64" rx="16" fill="#0F2236" stroke="#38BDF8"/>
-    <rect x="304" y="384" width="192" height="64" rx="16" fill="#17142A" stroke="#A78BFA"/>
-    <rect x="512" y="384" width="192" height="64" rx="16" fill="#271923" stroke="#FF7A66"/>
+    <rect x="96" y="400" width="192" height="64" rx="16" fill="#0F2236" stroke="#38BDF8"/>
+    <rect x="304" y="400" width="192" height="64" rx="16" fill="#17142A" stroke="#A78BFA"/>
+    <rect x="512" y="400" width="192" height="64" rx="16" fill="#271923" stroke="#FF7A66"/>
   </g>
-  <text x="120" y="424" fill="#BAE6FD" font-size="18" font-weight="800"><tspan>OOF-FIRST</tspan></text>
-  <text x="328" y="424" fill="#DDD6FE" font-size="18" font-weight="800"><tspan>MODEL DIVERSITY</tspan></text>
-  <text x="536" y="424" fill="#FFD2CA" font-size="18" font-weight="800"><tspan>ENSEMBLE</tspan></text>
+  <text x="120" y="440" fill="#BAE6FD" font-size="18" font-weight="800"><tspan>OOF-FIRST</tspan></text>
+  <text x="328" y="440" fill="#DDD6FE" font-size="18" font-weight="800"><tspan>MODEL DIVERSITY</tspan></text>
+  <text x="536" y="440" fill="#FFD2CA" font-size="18" font-weight="800"><tspan>ENSEMBLE</tspan></text>
 
   <g transform="translate(904 72)">
     <text x="0" y="24" fill="#64748B" font-size="14" font-weight="820" letter-spacing="2"><tspan>MODEL LANES</tspan></text>
