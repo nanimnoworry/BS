@@ -9,20 +9,26 @@ README=ROOT/"README.md"
 ASSETS=ROOT/"docs"/"assets"/"readme"
 REQUIRED={"hero.svg","hero-mobile.svg","model-bench.svg","model-bench-mobile.svg","ensemble-evidence.svg","ensemble-evidence-mobile.svg"}
 GRID=16.0
+MAX_README_CHARS=3400
+MAX_H2=6
 
 def fail(m): raise AssertionError(m)
 def q(v): return abs(v/GRID-round(v/GRID))<1e-9
 
 def validate_readme():
     text=README.read_text(encoding="utf-8"); low=text.lower()
-    for s in ("0.740085","0.739635","0.740039","0.740377","0.740384","not the official final artifact","plan3_model_research.ipynb","0.74232","0.74231"):
+    if len(text)>MAX_README_CHARS: fail(f"editorial budget exceeded: {len(text)} > {MAX_README_CHARS}")
+    h2=re.findall(r"^##\s+",text,re.M)
+    if len(h2)>MAX_H2: fail(f"too many H2 sections: {len(h2)} > {MAX_H2}")
+    if text.count("<details>")<2: fail("technical detail disclosure budget missing")
+    for s in ("0.740085","0.739635","0.740039","0.740377","0.740384","not the official final artifact","plan3_model_research.ipynb","0.74232","0.74231","not a clinical diagnostic"):
         if s.lower() not in low: fail(f"README canonical fact missing: {s}")
     for s in ("thisisstress","forest-green","production model","production adopted"):
         if s in low: fail(f"cross-project or ambiguous term: {s}")
     refs=set(re.findall(r"docs/assets/readme/([A-Za-z0-9._-]+\.svg)",text))
     if refs!=REQUIRED: fail(f"README asset refs mismatch: {sorted(refs)}")
     if text.count("<picture>")!=3 or text.count("max-width: 640px")!=3: fail("responsive picture contract failed")
-    order=["## Start Here","## Research Scope","## OOF Model Bench","## Ensemble Evidence","## Feature Work","## Relationship to Official Result","## Public Notebook Boundary","## Related Repositories"]
+    order=["## Start Here","## OOF Model Bench","## Ensemble Evidence","## Research Context","## Official Boundary","## Scope & Related Research"]
     p=[text.find(x) for x in order]
     if any(x<0 for x in p) or p!=sorted(p): fail("README reading order failed")
 
@@ -60,6 +66,7 @@ def main():
     for p in sorted(ASSETS.glob("*.svg")): validate_svg(p)
     print("BS README visual validator: PASS")
     print("responsive assets: 3 desktop + 3 mobile")
+    print("editorial: <=3400 chars / <=6 H2 / technical detail collapsed")
     return 0
 
 if __name__=="__main__":
