@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="560" viewBox="0 0 1600 560" role="img" aria-labelledby="title desc">
+<title id="title">BS OOF model bench</title>
+<desc id="desc">Research workspace visual showing three model lanes feeding an OOF comparison bench. The official final project record remains in PSP.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08111F"/><stop offset=".55" stop-color="#0B1220"/><stop offset="1" stop-color="#17142A"/></linearGradient>
+  <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1600" height="560" rx="32" fill="url(#bg)"/>
+<rect x="80" y="64" width="720" height="432" fill="none" opacity="0" id="text-safe-zone"/>
+<g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <g data-title="true"><text x="96" y="112" fill="#A78BFA" font-size="20" font-weight="820" letter-spacing="4"><tspan>PLAN 3 RESEARCH · OOF MODEL BENCH</tspan></text></g>
+  <text x="96" y="198" fill="#F8FAFC" font-size="68" font-weight="850"><tspan>BS</tspan></text>
+  <text x="96" y="252" fill="#F8FAFC" font-size="34" font-weight="800"><tspan>Fertility PSP Research Workspace</tspan></text>
+  <text x="96" y="310" fill="#CBD5E1" font-size="26" font-weight="700"><tspan>5-Fold OOF · weighted ensemble · rank ensemble</tspan></text>
+  <text x="96" y="354" fill="#94A3B8" font-size="18"><tspan>Public modeling workspace · official final result lives in PSP</tspan></text>
+  <g data-grid="16">
+    <rect x="96" y="400" width="192" height="64" rx="16" fill="#0F2236" stroke="#38BDF8"/>
+    <rect x="304" y="400" width="192" height="64" rx="16" fill="#17142A" stroke="#A78BFA"/>
+    <rect x="512" y="400" width="192" height="64" rx="16" fill="#271923" stroke="#FF7A66"/>
+  </g>
+  <text x="120" y="440" fill="#BAE6FD" font-size="18" font-weight="800"><tspan>OOF-FIRST</tspan></text>
+  <text x="328" y="440" fill="#DDD6FE" font-size="18" font-weight="800"><tspan>MODEL DIVERSITY</tspan></text>
+  <text x="536" y="440" fill="#FFD2CA" font-size="18" font-weight="800"><tspan>ENSEMBLE</tspan></text>
+
+  <g transform="translate(904 72)">
+    <text x="0" y="24" fill="#64748B" font-size="14" font-weight="820" letter-spacing="2"><tspan>MODEL LANES</tspan></text>
+    <g data-grid="16">
+      <rect x="0" y="64" width="448" height="80" rx="16" fill="#0F2236" stroke="#38BDF8"/>
+      <rect x="0" y="160" width="448" height="80" rx="16" fill="#17142A" stroke="#A78BFA"/>
+      <rect x="0" y="256" width="448" height="80" rx="16" fill="#101A2B" stroke="#64748B"/>
+    </g>
+    <text x="24" y="114" fill="#F8FAFC" font-size="24" font-weight="800"><tspan>CATBOOST</tspan></text>
+    <text x="296" y="114" fill="#BAE6FD" font-size="20" font-weight="800"><tspan>0.740085</tspan></text>
+    <text x="24" y="210" fill="#F8FAFC" font-size="24" font-weight="800"><tspan>LIGHTGBM</tspan></text>
+    <text x="296" y="210" fill="#DDD6FE" font-size="20" font-weight="800"><tspan>0.739635</tspan></text>
+    <text x="24" y="306" fill="#F8FAFC" font-size="24" font-weight="800"><tspan>XGBOOST</tspan></text>
+    <text x="296" y="306" fill="#CBD5E1" font-size="20" font-weight="800"><tspan>0.740039</tspan></text>
+    <path d="M464 104 H544 M464 200 H544 M464 296 H544" stroke="#475569" stroke-width="3"/>
+    <circle cx="568" cy="200" r="28" fill="#0E1B2B" stroke="#A78BFA" stroke-width="3"/>
+    <circle cx="568" cy="200" r="8" fill="#F8FAFC" filter="url(#glow)">
+      <animate attributeName="opacity" values=".35;1;.35" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="416" cy="104" r="5" fill="#38BDF8"><animate attributeName="opacity" values=".25;1;.25" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="416" cy="200" r="5" fill="#A78BFA"><animate attributeName="opacity" values=".25;1;.25" dur="3.8s" repeatCount="indefinite"/></circle>
+  </g>
+</g>
+</svg>

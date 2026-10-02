@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="464" viewBox="0 0 1600 464" role="img" aria-labelledby="title desc">
+<title id="title">Ensemble evidence</title>
+<desc id="desc">Weighted and rank ensemble cards show shared model weights and notebook OOF results.</desc>
+<rect width="1600" height="464" rx="32" fill="#0B1220"/>
+<g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <g data-title="true"><text x="80" y="72" fill="#F8FAFC" font-size="30" font-weight="830"><tspan>ENSEMBLE EVIDENCE</tspan></text></g>
+  <text x="80" y="108" fill="#64748B" font-size="17"><tspan>CatBoost 0.45 · LightGBM 0.20 · XGBoost 0.35</tspan></text>
+  <g data-grid="16">
+    <rect x="80" y="160" width="672" height="224" rx="24" fill="#0F2236" stroke="#38BDF8"/>
+    <rect x="768" y="160" width="752" height="224" rx="24" fill="#17142A" stroke="#A78BFA"/>
+  </g>
+  <text x="112" y="210" fill="#38BDF8" font-size="15" font-weight="820" letter-spacing="2"><tspan>3-MODEL WEIGHTED</tspan></text>
+  <text x="112" y="278" fill="#F8FAFC" font-size="50" font-weight="850"><tspan>0.740377</tspan></text>
+  <text x="112" y="326" fill="#CBD5E1" font-size="19"><tspan>OOF ROC-AUC</tspan></text>
+
+  <text x="800" y="210" fill="#A78BFA" font-size="15" font-weight="820" letter-spacing="2"><tspan>3-MODEL RANK</tspan></text>
+  <text x="800" y="278" fill="#F8FAFC" font-size="50" font-weight="850"><tspan>0.740384</tspan></text>
+  <text x="800" y="326" fill="#CBD5E1" font-size="19"><tspan>OOF ROC-AUC</tspan></text>
+  <text x="1120" y="326" fill="#64748B" font-size="15"><tspan>Rank performance ≠ calibration quality</tspan></text>
+</g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1008" viewBox="0 0 800 1008" role="img" aria-labelledby="title desc">
+<title id="title">BS mobile OOF model bench</title><desc id="desc">Mobile research workspace visual with separated title lines and large model cards.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08111F"/><stop offset="1" stop-color="#17142A"/></linearGradient></defs>
+<rect width="800" height="1008" rx="32" fill="url(#bg)"/>
+<g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <g data-title="true"><text x="64" y="84" fill="#A78BFA" font-size="24" font-weight="820" letter-spacing="2"><tspan>PLAN 3 RESEARCH · MODEL BENCH</tspan></text></g>
+  <text x="64" y="164" fill="#F8FAFC" font-size="64" font-weight="850"><tspan>BS</tspan></text>
+  <text x="64" y="218" fill="#F8FAFC" font-size="34" font-weight="800"><tspan>Fertility PSP</tspan></text>
+  <text x="64" y="262" fill="#F8FAFC" font-size="34" font-weight="800"><tspan>Research Workspace</tspan></text>
+  <text x="64" y="314" fill="#CBD5E1" font-size="26" font-weight="700"><tspan>5-Fold OOF · Weighted / Rank</tspan></text>
+  <text x="64" y="354" fill="#94A3B8" font-size="24"><tspan>Official final result lives in PSP</tspan></text>
+  <g data-grid="16">
+    <rect x="64" y="400" width="672" height="160" rx="24" fill="#0F2236" stroke="#38BDF8"/>
+    <rect x="64" y="576" width="672" height="160" rx="24" fill="#17142A" stroke="#A78BFA"/>
+    <rect x="64" y="752" width="672" height="160" rx="24" fill="#101A2B" stroke="#64748B"/>
+  </g>
+  <text x="96" y="452" fill="#38BDF8" font-size="24" font-weight="820"><tspan>CATBOOST</tspan></text><text x="96" y="518" fill="#F8FAFC" font-size="44" font-weight="850"><tspan>OOF 0.740085</tspan></text>
+  <text x="96" y="628" fill="#A78BFA" font-size="24" font-weight="820"><tspan>LIGHTGBM</tspan></text><text x="96" y="694" fill="#F8FAFC" font-size="44" font-weight="850"><tspan>OOF 0.739635</tspan></text>
+  <text x="96" y="804" fill="#94A3B8" font-size="24" font-weight="820"><tspan>XGBOOST</tspan></text><text x="96" y="870" fill="#F8FAFC" font-size="44" font-weight="850"><tspan>OOF 0.740039</tspan></text>
+  <text x="64" y="960" fill="#94A3B8" font-size="24"><tspan>Notebook comparison · not the official final artifact</tspan></text>
+</g>
+</svg>
